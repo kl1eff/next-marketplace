@@ -1,0 +1,22 @@
+.header {
+  height: 50px;
+  box-shadow: 0 3px 8px #223c5033;
+  padding: 0 20%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
+  height: 72px;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+  @media (max-width: 664px) {
+    padding: 0 5%;
+  }
+  .logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+  }
+}

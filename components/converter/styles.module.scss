@@ -1,0 +1,28 @@
+.converter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  input, input:focus {
+    width: 150px;
+    height: 31px;
+    border: 0;
+    outline: none;
+    border: 1px solid #404b6d;
+    padding-left: 10px;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  button {
+    background-color: #404b6d;
+    padding: 0.5rem 0;
+    color: #fff;
+    border: 0;
+    width: 150px;
+    @media (max-width: 1170px) {
+      width: 110px;
+    }
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+  }
+}

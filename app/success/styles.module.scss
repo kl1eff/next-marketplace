@@ -1,0 +1,16 @@
+.success {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .link {
+    padding: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+}
