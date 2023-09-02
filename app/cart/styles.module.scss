@@ -34,7 +34,9 @@
     .checkout {
       display: flex;
       justify-content: space-between;
+      align-items: flex-end;
       flex-direction: column;
+      width: 200px;
     }
     .total {
       margin-top: 100px;
