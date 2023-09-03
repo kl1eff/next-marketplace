@@ -1,11 +1,8 @@
 'use client';
 
-import React from 'react';
 import styles from './styles.module.scss';
 import Product from '@/types/Product';
 import ProductCard from '../productCard/ProductCard';
-import { Provider } from 'react-redux';
-import store from '@/store';
 
 type ProductsProps = {
   products: Product[];

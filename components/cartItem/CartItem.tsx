@@ -1,5 +1,4 @@
 import Product from '@/types/Product';
-import React from 'react';
 import styles from './styles.module.scss';
 import Image from 'next/image';
 import { RootState, useAppDispatch } from '@/store';
