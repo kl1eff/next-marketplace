@@ -17,7 +17,7 @@ function Converter() {
   const dispatch = useAppDispatch();
 
   const toCoin = () => {
-    if (usdInput <= usdAmount) {
+    if (usdInput <= usdAmount && usdInput > 0) {
       dispatch(replenish({
         currency: 'coin',
         amount: usdInput,
@@ -30,7 +30,7 @@ function Converter() {
   };
   
   const toUsd = () => {
-    if (coinInput <= coinAmount) {
+    if (coinInput <= coinAmount && coinInput > 0) {
       dispatch(replenish({
         currency: 'usd',
         amount: coinInput,

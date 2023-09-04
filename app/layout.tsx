@@ -15,8 +15,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" translate="no">
       <body className={inter.className}>
-        <Header />
-        <ProviderWrapper children={<main>{children}</main>} />
+        <ProviderWrapper
+          children={
+            <>
+              <main>{children}</main>
+              <Header />
+            </>
+          }
+        />
       </body>
     </html>
   );

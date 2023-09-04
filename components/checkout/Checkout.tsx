@@ -2,6 +2,7 @@
 import styles from './styles.module.scss';
 import { RootState, useAppDispatch } from '@/store';
 import { withdraw } from '@/store/walletSlice';
+import { clear } from '@/store/cartSlice';
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/navigation';
 
@@ -18,7 +19,8 @@ function Checkout({ isUsd }: { isUsd: boolean }) {
         currency: isUsd ? 'usd' : 'coin',
         amount: cartTotal
       }))
-      router.push('/success')
+      router.push('/success');
+      dispatch(clear());
     } else {
       alert('insufficient funds')
     }
