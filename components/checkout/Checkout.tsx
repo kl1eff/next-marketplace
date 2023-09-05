@@ -2,7 +2,6 @@
 import styles from './styles.module.scss';
 import { RootState, useAppDispatch } from '@/store';
 import { withdraw } from '@/store/walletSlice';
-import { clear } from '@/store/cartSlice';
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/navigation';
 
@@ -13,14 +12,13 @@ function Checkout({ isUsd }: { isUsd: boolean }) {
   const dispatch = useAppDispatch();
   const router = useRouter();
 
-  const buttonHandle = () => {
+  const buttonHandle = async () => {
     if (userAmount >= cartTotal) {
       dispatch(withdraw({
         currency: isUsd ? 'usd' : 'coin',
         amount: cartTotal
       }))
       router.push('/success');
-      dispatch(clear());
     } else {
       alert('insufficient funds')
     }
