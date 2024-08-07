@@ -49,6 +49,6 @@ function InfoProduct({ product, setInfoOpened }: InfoProductProps) {
       </div>
     </div>
   );
-}
+} 
 
 export default InfoProduct;

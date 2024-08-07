@@ -23,7 +23,7 @@ function page() {
         <ul>
           {items.map((item) => (
             <li key={item.id}>
-              <CartItem id={item.id} title={item.title} price={item.price} thumbnail={item.thumbnail} />
+              <CartItem id={item.id} title={item.title} price={item.price} thumbnail={item.thumbnail} rating={0} description={''}/>
             </li>
           ))}
         </ul>
