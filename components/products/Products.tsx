@@ -12,7 +12,17 @@ function Products({ products }: ProductsProps) {
   return (
     <div className={styles.products}>
       {products.map((product) => {
-        return <ProductCard key={product.id} id={product.id} title={product.title} price={product.price} thumbnail={product.thumbnail} />;
+        return (
+          <ProductCard
+            key={product.id}
+            id={product.id}
+            title={product.title}
+            description={product.description}
+            rating={product.rating}
+            price={product.price}
+            thumbnail={product.thumbnail}
+          />
+        );
       })}
     </div>
   );

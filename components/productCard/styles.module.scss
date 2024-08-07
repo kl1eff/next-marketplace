@@ -19,7 +19,6 @@
   p {
     text-align: center;
     font-weight: 600;
-    
   }
   padding: 10px 0;
   button {
@@ -38,5 +37,10 @@
   }
   .added {
     transform: scale(1.04);
+  }
+  &:hover {
+    transform: scale(105%);
+    transition: all 0.1s;
+    cursor: pointer;
   }
 }

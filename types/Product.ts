@@ -3,6 +3,8 @@ type Product = {
   title: string;
   price: number;
   thumbnail: string;
+  description: string;
+  rating: number;
 };
 
 export default Product;
